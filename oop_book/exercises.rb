@@ -29,3 +29,43 @@
 
 
 
+class MyCar
+  attr_accessor :color
+  attr_reader :year
+
+  def initialize(year, color, model)
+    @current_speed = 0
+    @year = year
+    @color = color
+    @model = model
+  end
+
+  def self.gas_mileage
+    # puts "gas mileage"
+  end
+
+  def spray_paint(new_color)
+    self.color = new_color
+  end
+  def speed_up(num)
+    @speed += num
+    puts "You sped up by #{num}. You are now going #{@current_speed}"
+  end
+
+  def brake
+    @speed -= num
+    puts "You slowed down by #{num}. You are now going #{@current_speed}"
+  end
+
+  def shut_off
+    @current_speed = 0
+    puts "Car is now off."
+  end
+
+  def to_s
+    "This is a #{@model} car"
+  end
+end
+
+my_car = MyCar.new(123, "Blue", "Ford")
+puts my_car
