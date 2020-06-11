@@ -1,4 +1,11 @@
-abc
-abd
-
-a
+abc y
+abd y
+bd y
+acd y
+d y
+acd y
+bc y
+cd y
+d y
+ad y
+cd n
